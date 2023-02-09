@@ -1,0 +1,13 @@
+,outputs
+0,"{'ID': 1, 'name': 'ТОО Golden Rill Group', 'address': 'ул. Ауэзова, 1Б, Алматы', 'website': 'vodanazakaz.kz', 'phone': ['+7 (727) 220-20-10'], 'social': ['http://vk.com/vodahrustalnaya', 'https://youtube.com/channel/UCeE3OySRzPNvv-LOHKOf2dg']}"
+1,"{'ID': 2, 'name': 'Raimbek Group', 'address': 'ул. Жамбыла, 111, Алмалинский район, Алматы', 'website': 'raimbek.com', 'phone': ['8 (800) 070-05-55'], 'social': []}"
+2,"{'ID': 3, 'name': 'Platinum Water', 'address': 'просп. Рыскулова, 143, Алматы', 'website': 'www.pwater.kz', 'phone': ['+7 (771) 574-33-55'], 'social': []}"
+3,"{'ID': 4, 'name': 'Тибетская вода', 'address': 'ул. Геологов, 2Г, Алматы', 'website': '', 'phone': ['+7 (701) 517-29-29'], 'social': []}"
+4,"{'ID': 5, 'name': 'Global Food Trade', 'address': 'ул. Култегин, 31, Алатауский район, микрорайон Шанырак-2, Алматы', 'website': '', 'phone': [], 'social': []}"
+5,"{'ID': 6, 'name': 'Комета', 'address': 'Наманганская ул., 43А, Алматы', 'website': 'www.calipso-water.kz', 'phone': ['+7 (727) 385-99-92'], 'social': []}"
+6,"{'ID': 7, 'name': 'Обис', 'address': 'ул. Ратушного, 38, Алматы', 'website': 'www.obis.kz', 'phone': ['+7 (727) 294-18-18'], 'social': []}"
+7,"{'ID': 8, 'name': 'Galanz Bottlers', 'address': 'просп. Суюнбая, 239Б, Алматы', 'website': 'www.galanz.kz', 'phone': ['+7 (727) 390-90-29'], 'social': []}"
+8,"{'ID': 9, 'name': 'Аквамаркет', 'address': 'ул. Манаса, 3, Алматы', 'website': 'samal.kz', 'phone': ['+7 (727) 390-77-77'], 'social': ['http://youtube.com/channel/UCUjQggPT7I6hG9Cwa7UALlQ', 'https://vk.com/club37949329']}"
+9,"{'ID': 10, 'name': 'Asia Waters', 'address': 'ул. Торетай, 92А, Алматы', 'website': 'asiawaters.com', 'phone': ['+7 (727) 331-13-31'], 'social': []}"
+10,"{'ID': 11, 'name': 'АК-Булак', 'address': 'Омская ул., 108, Алматы', 'website': 'akbulak-atyrau.kz', 'phone': ['+7 (727) 290-87-12'], 'social': []}"
+11,"{'ID': 12, 'name': 'Rg Brands компания', 'address': 'просп. Райымбека, 212, Алматы', 'website': 'brands.kz', 'phone': ['+7 (727) 331-55-55'], 'social': []}"

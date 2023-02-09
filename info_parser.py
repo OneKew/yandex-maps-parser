@@ -27,7 +27,7 @@ class Parser:
         outputs = []
 
         for organization_url in hrefs:
-            try:
+            # try:
             # if True:
                 self.driver.execute_script(f'window.open("{organization_url}","org_tab");')
                 child_handle = [x for x in self.driver.window_handles if x != parent_handle][0]
@@ -35,25 +35,25 @@ class Parser:
                 sleep(0.7)
                 soup = BeautifulSoup(self.driver.page_source, "lxml")
                 org_id += 1
+
                 name = self.soup_parser.get_name(soup)
+
                 address = self.soup_parser.get_address(soup)
                 website = self.soup_parser.get_website(soup)
-                opening_hours = self.soup_parser.get_opening_hours(soup)
-                ypage = self.driver.current_url
-                rating = self.soup_parser.get_rating(soup)
                 social = self.soup_parser.get_social(soup)
                 phone = self.soup_parser.get_phone(soup)
-                goods, reviews = None, None
-                output = json_pattern.into_json(org_id, name, address, website, opening_hours, ypage, goods, rating,
-                                                reviews, phone, social)
+
+                output = json_pattern.into_json(org_id, name, address, website,
+                                                phone, social)
                 outputs.append(output)
 
-                if len(outputs) % 100 == 0:
+                if True:
                     df = pd.DataFrame()
                     df['outputs'] = outputs
                     df.to_csv(f'result_output/{type_org}_outputs.csv')
                     self.driver.quit()
                     sleep(random.uniform(2.2, 2.4))
+                    #self.driver = webdriver.quit()
                     self.driver = webdriver.Safari()
                     self.driver.maximize_window()
                     self.driver.get('https://yandex.ru/maps')
@@ -63,14 +63,14 @@ class Parser:
                 self.driver.switch_to.window(parent_handle)
                 sleep(random.uniform(0.2, 0.4))
 
-            except:
-                print('except')
-                # driver.quit()
-                sleep(random.uniform(2.2, 2.4))
-                self.driver = webdriver.Safari()
-                self.driver.maximize_window()
-                self.driver.get('https://yandex.ru/maps')
-                parent_handle = self.driver.window_handles[0]
+            # except:
+            #     print('except')
+            #     driver.quit()
+            #     sleep(random.uniform(2.2, 2.4))
+            #     self.driver = webdriver.Safari()
+            #     self.driver.maximize_window()
+            #     self.driver.get('https://yandex.ru/maps')
+            #     parent_handle = self.driver.window_handles[0]
         print('Данные сохранены')
         self.driver.quit()
 

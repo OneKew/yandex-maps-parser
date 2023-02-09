@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 
 class SoupContentParser(object):
 
-    def get_name(soup_content):
+    def get_name(_,soup_content):
         try:
             for data in soup_content.find_all("h1", {"class": "orgpage-header-view__header"}):
                 name = data.getText()
@@ -13,17 +13,17 @@ class SoupContentParser(object):
         except Exception:
             return ""
 
-    def get_phone(soup_content):
+    def get_phone(_,soup_content):
         try:
             phones = []
             for data in soup_content.find_all("div", {"class": "card-phones-view__number"}):
                 phone = data.getText()
-                phones.append(phone)
+                phones.append(phone.replace('Показать телефон', ''))
             return phones
         except Exception:
             return []
 
-    def get_social(soup_content):
+    def get_social(_,soup_content):
         try:
             socials = []
             for data in soup_content.find_all("a", {"class": "button _view_secondary-gray _ui _size_medium _link"}):
@@ -33,7 +33,7 @@ class SoupContentParser(object):
         except Exception:
             return []
 
-    def get_address(soup_content):
+    def get_address(_,soup_content):
         try:
             for data in soup_content.find_all("a", {"class": "business-contacts-view__address-link"}):
                 address = data.getText()
@@ -41,7 +41,7 @@ class SoupContentParser(object):
         except Exception:
             return ""
 
-    def get_website(soup_content):
+    def get_website(_,soup_content):
         try:
             for data in soup_content.find_all("span", {"class": "business-urls-view__text"}):
                 website = data.getText()
@@ -49,7 +49,7 @@ class SoupContentParser(object):
         except Exception:
             return ""
 
-    def get_opening_hours(soup_content):
+    def get_opening_hours(_,soup_content):
         opening_hours = []
         try:
             for data in soup_content.find_all("meta", {"itemprop": "openingHours"}):
@@ -58,7 +58,7 @@ class SoupContentParser(object):
         except Exception:
             return ""
 
-    def get_goods(soup_content):
+    def get_goods(_,soup_content):
         dishes = []
         prices = []
         try:
@@ -88,7 +88,7 @@ class SoupContentParser(object):
 
         return dict(zip(dishes, prices))
 
-    def get_rating(soup_content):
+    def get_rating(_,soup_content):
         rating = ""
         try:
             for data in soup_content.find_all("span", {"class": "business-summary-rating-badge-view__rating-text"}):

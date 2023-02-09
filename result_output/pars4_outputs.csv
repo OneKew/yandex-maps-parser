@@ -1,0 +1,8 @@
+,outputs
+0,"{'ID': 1, 'name': 'Тянь-Шань Engineering', 'address': 'ул. Тимирязева, 42, корп. 17, Алматы', 'website': 't-sh-e.com', 'phone': ['+7 (727) 274-22-22'], 'social': ['https://www.youtube.com/channel/UCImjZu720DJA626ru_X_wLQ']}"
+1,"{'ID': 2, 'name': 'Ikonstructor', 'address': 'ул. Рыскулова, 28, село Бесагаш', 'website': 'ikonstructor.business.site', 'phone': ['+7 (707) 454-09-81'], 'social': []}"
+2,"{'ID': 3, 'name': 'Ugs', 'address': 'ул. Радостовца, 152/6, Алматы', 'website': 'ugs.kz', 'phone': ['+7 (777) 229-69-81'], 'social': []}"
+3,"{'ID': 4, 'name': 'Graphene project', 'address': 'ул. Егизбаева, 7В, Алматы', 'website': 'graphene.kz', 'phone': ['+7 (775) 516-95-29'], 'social': []}"
+4,"{'ID': 5, 'name': 'Профит', 'address': 'ул. Ади Шарипова, 92, Алматы', 'website': 'profit-a.kz', 'phone': ['+7 (727) 354-66-20'], 'social': ['https://www.youtube.com/channel/UCwAdFbAxCVOSbv0Zh1AN4OQ']}"
+5,"{'ID': 6, 'name': 'Ela Design & Engineering', 'address': 'ул. Жанат-2, 17, Алматы', 'website': 'www.ela-engineering.com', 'phone': ['+7 (777) 773-02-55'], 'social': []}"
+6,"{'ID': 7, 'name': 'Конструкторское бюро Авангард', 'address': 'ул. Лобачевского, 78, Алматы', 'website': 'www.kb-avantgarde.kz', 'phone': ['+7 (727) 279-18-49'], 'social': []}"

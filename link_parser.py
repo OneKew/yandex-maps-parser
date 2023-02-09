@@ -58,7 +58,8 @@ class LinksCollector:
 
     def run(self, city, district, type_org_ru, type_org):
         self._init_driver()
-        request = city + ' ' + district + ' ' + type_org_ru
+        request = city + ' ' + type_org_ru
+
         self._open_page(request)
         organizations_hrefs = []
 
@@ -98,10 +99,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     type_org = args.type_org
 
-    for type_org in ['translator', 'accountant', 'massage']:
+    for type_org in ['test']:
         for district in districts:
             sleep(1)
             driver = webdriver.Safari()
             grabber = LinksCollector(driver)
-            grabber.run(city="Москва", district=district, type_org_ru=type_org_mapping[type_org], type_org=type_org)
+            grabber.run(city="Алматы", district=district, type_org_ru=type_org_mapping[type_org], type_org=type_org)
 
